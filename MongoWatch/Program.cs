@@ -9,7 +9,12 @@ namespace MongoWatch
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
+            test();
 
+        }
+
+        private static void test()
+        {
             var client = new MongoClient("mongodb://localhost:27017");
             var database = client.GetDatabase("db_test");
             var collection = database.GetCollection<BsonDocument>("testColl");
