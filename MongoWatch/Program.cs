@@ -10,7 +10,6 @@ namespace MongoWatch
         {
             Console.WriteLine("Hello World!");
             test();
-
         }
 
         private static void test()
